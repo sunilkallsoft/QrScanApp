@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.auth.login.LoginFragment"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/viewBlock1"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="W, 1:1"
+            app:layout_constraintHeight_percent="0.6"
+            android:background="@color/white"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/cmLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="W, 1:1"
+            android:src="@drawable/img_cm"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintVertical_bias="0.2"
+            android:layout_marginEnd="-30dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/cgLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cmLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="W, 1:1"
+            android:src="@drawable/img_cg"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintVertical_bias="0.08"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/cgLogo"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cmLogo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_30sdp"
+            android:text="@string/e_pravesh_suvidha"
+            android:layout_margin="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginRegistrationLabel"
+            app:layout_constraintTop_toBottomOf="@id/cmLogo"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_20sdp"
+            android:text="@string/login_registration_label"
+            android:layout_margin="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterYourMobileLabel"
+            app:layout_constraintTop_toBottomOf="@id/loginRegistrationLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/txt_14sdp"
+            android:text="@string/please_type_your_mobile_no"
+            android:layout_margin="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobileNoInputLayout"
+            app:layout_constraintTop_toBottomOf="@id/enterYourMobileLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:boxBackgroundColor="@color/white"
+            app:hintEnabled="false"
+            app:boxStrokeColor="@color/grey"
+            app:boxCornerRadiusTopStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusTopEnd="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomEnd="@dimen/card_corner_radius"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobileNoInput"
+                android:hint="@string/_10_digits_mobile_number"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:textSize="@dimen/txt_14sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:id="@+id/getOTPBtn"
+            android:textColor="@color/grey"
+            android:text="@string/get_otp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/mobileNoInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/card_corner_radius"
+            android:background="@drawable/rounded_solid_grey_rectangle_bg"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/btnClickProgress"
+            android:visibility="gone"
+            android:elevation="@dimen/_2sdp"
+            android:indeterminateTint="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="@id/getOTPBtn"
+            app:layout_constraintEnd_toEndOf="@id/getOTPBtn"
+            app:layout_constraintTop_toTopOf="@id/getOTPBtn"
+            app:layout_constraintBottom_toBottomOf="@id/getOTPBtn"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

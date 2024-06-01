@@ -1,0 +1,32 @@
+package com.allsoft.qrscanapp.model
+
+data class Visitor(
+    val allotted_date_str: String,
+    val allotted_time: String,
+    val ap_block: Any,
+    val ap_gp: Any,
+    val ap_nnn: Any,
+    val ap_village: Any,
+    val ap_ward: Any,
+    val applicant_address: String,
+    val applicant_age: Int,
+    val applicant_district: String,
+    val applicant_fathers_name: String,
+    val applicant_gender: String,
+    val applicant_gp: String,
+    val applicant_mobile_number: String,
+    val applicant_name: String,
+    val applicant_visit_datetime: String,
+    val applicant_vs: String,
+    val approval_time: String,
+    val approved_by: String,
+    val area_type: Any,
+    val entry_time: Any,
+    val ip_address: String,
+    val isApproved: Boolean,
+    val number_of_visitors: Int,
+    val pass_id: Int,
+    val purpose_of_visit: String,
+    val time_stamp: String,
+    val user_id: String
+)

@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">e-प्रवेश सुविधा</string>
+    <string name="pass_date">पास दिनांक</string>
+    <string name="visitor_s_name">विज़िटर का नाम</string>
+    <string name="visitor_s_mobile_no">विज़िटर का मोबाईल नंबर</string>
+    <string name="no_of_persons_with">साथ आने वाले लोगों की संख्या</string>
+    <string name="scan_qr">क्यू आर स्कैन करें</string>
+    <string name="gate_pass_info">गेट पास विवरण</string>
+    <string name="error">Error</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_pravesh_suvidha">e-प्रवेश सुविधा</string>
+    <string name="please_type_your_mobile_no">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="_10_digits_mobile_number">10 अंकों का मोबाइल नंबर</string>
+    <string name="get_otp">ओटीपी प्राप्त करें</string>
+    <string name="one_time_password">वन टाइम पासवर्ड(OTP)</string>
+    <string name="we_have_sent_a_6_digit_verification_code_to_your_mobile_number">हमने आपके मोबाइल नंबर पर 6 अंकों का सत्यापन कोड भेजा है</string>
+    <string name="enter_otp">ओटीपी दर्ज करें</string>
+    <string name="verify_otp">ओटीपी सत्यापित करें</string>
+    <string name="invalid_otp_please_enter_the_correct_otp">अमान्य ओटीपी. कृपया सही ओटीपी दर्ज करें.</string>
+    <string name="please_enter_otp">कृपया ओटीपी दर्ज करें</string>
+    <string name="didn_t_received_otp_font_color_ea3639_b_resend_otp_b_font"><![CDATA[ओटीपी नहीं मिला? <font color=\'#EA3639\'><b>ओटीपी पुनः भेजें</b></font>]]></string>
+    <string name="cm_gate_pass_form">मुख्यमंत्री निवास गेट पास फॉर्म</string>
+    <string name="name">नाम</string>
+    <string name="father_s_name">पिता का नाम</string>
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="other">अन्य</string>
+    <string name="age_label">विजिटर की उम्र</string>
+    <string name="age">उम्र</string>
+    <string name="objective_of_meet">मिलने का उद्देश्य</string>
+    <string name="meet_date">मिलने की तारीख</string>
+    <string name="visitor_s_assembly_area">विजिटर का विधानसभा क्षेत्र</string>
+    <string name="assembly_area">विधानसभा क्षेत्र</string>
+    <string name="district">विजिटर का जिला</string>
+    <string name="urban_rural">"शहरी/ग्रामीण "</string>
+    <string name="apply_label">आवेदन करें</string>
+    <string name="please_enter_no_of_persons_with_visitor">कृपया साथ आने वाले लोगों की संख्या दर्ज करें</string>
+    <string name="please_select_urban_or_rural">कृपया शहरी या ग्रामीण का चयन करें</string>
+    <string name="please_select_district">कृपया जिला चुनें</string>
+    <string name="please_select_assembly_area">कृपया विधानसभा क्षेत्र का चयन करें</string>
+    <string name="please_select_meeting_date">कृपया मिलने की तारीख दर्ज करें</string>
+    <string name="please_select_meeting_objective">कृपया मिलने का उद्देश्य दर्ज करें</string>
+    <string name="please_enter_age">कृपया विजिटर की उम्र दर्ज करें</string>
+    <string name="please_enter_fathers_name">कृपया पिता का नाम दर्ज करें</string>
+    <string name="please_enter_your_name">कृपया विजिटर का नाम दर्ज करें</string>
+    <string name="login_registration_label">लॉगिन/रजिस्ट्रेशन</string>
+    <string name="civic_bodies_label">नगरीय निकाय</string>
+    <string name="ward_label">वार्ड</string>
+    <string name="block_label">ब्लॉक</string>
+    <string name="panchayat_label">ग्राम पंचायत</string>
+    <string name="village_label">ग्राम</string>
+    <string name="registatrion_success">रजिस्ट्रेशन सफल</string>
+    <string name="you_are_registered_successfully">आपका पंजीकरण सफलतापूर्वक पूरा हो गया है.</string>
+    <string name="continue_label">आगे जाए</string>
+    <string name="proceed_label">प्रोसीड करें</string>
+
+    <string-array name="district">
+        <item>बालोद</item>
+        <item>बलौदाबाजार</item>
+        <item>बलरामपुर</item>
+        <item>बस्तर</item>
+        <item>बेमेतरा</item>
+        <item>बीजापुर</item>
+        <item>बिलासपुर</item>
+        <item>दंतेवाड़ा</item>
+        <item>दुर्ग</item>
+        <item>गरियाबंद</item>
+        <item>गौरेला-पेंड्रा-मरवाही</item>
+        <item>जांजगीर-चाम्पा</item>
+        <item>जशपुर</item>
+        <item>कबीरधाम(कवर्धा)</item>
+        <item>कांकेर</item>
+        <item>कोंडागांव</item>
+        <item>खैरागढ़-छुईखदान-गंडई</item>
+        <item>कोरबा</item>
+        <item>कोरिया</item>
+        <item>महासमुंद</item>
+        <item>मनेन्द्रगढ़-चिरमिरी-भरतपुर</item>
+        <item>मोहला-मानपुर-अम्बागढ़ चौकी</item>
+        <item>मुंगेली</item>
+        <item>नारायणपुर</item>
+        <item>रायगढ़</item>
+        <item>रायपुर</item>
+        <item>राजनंदगांव</item>
+        <item>सारंगढ़-बिलाईगढ़</item>
+        <item>सक्ती</item>
+        <item>सुकमा</item>
+        <item>सूरजपुर</item>
+        <item>सरगुजा</item>
+    </string-array>
+
+
+    <string-array name="assembly_areas">
+        <item>Abhanpur</item>
+        <item>Ahirwara</item>
+        <item>Akaltara</item>
+        <item>Ambikapur</item>
+        <item>Antagarh</item>
+        <item>Arang</item>
+        <item>Baikunthpur</item>
+        <item>Balod</item>
+        <item>Balodabazar</item>
+        <item>Basna</item>
+        <item>Bastar</item>
+        <item>Beltara</item>
+        <item>Bemetara</item>
+        <item>Bhanupratappur</item>
+        <item>Bharatpur</item>
+        <item>Bhatapara</item>
+        <item>Bhatgaon</item>
+        <item>Bijapur</item>
+        <item>Bilaigarh</item>
+        <item>Bilha</item>
+        <item>Bindranawagarh</item>
+        <item>Chandrapur</item>
+        <item>Chitrakot</item>
+        <item>Dantewada</item>
+        <item>Dhamtari</item>
+        <item>Dharamjaigarh</item>
+        <item>Dharsiwa</item>
+        <item>Dondilohara</item>
+        <item>Dongargaon</item>
+        <item>Dongargarh</item>
+        <item>Durg Gramin</item>
+        <item>Durg Shahar</item>
+        <item>Gunderdehi</item>
+        <item>Jagdalpur</item>
+        <item>Jaijaipur</item>
+        <item>Janjgir Champa</item>
+        <item>Jashpur</item>
+        <item>Kanker</item>
+        <item>Kashdol</item>
+        <item>Katghora</item>
+        <item>Kawardha</item>
+        <item>Keshkal</item>
+        <item>Khairagarh</item>
+        <item>Khallari</item>
+        <item>Kharsiya</item>
+        <item>Khujji</item>
+        <item>Kondagaon</item>
+        <item>Konta</item>
+        <item>Korba</item>
+        <item>Kota</item>
+        <item>Kunkuri</item>
+        <item>Kurud</item>
+        <item>Lailunga</item>
+        <item>Lormi</item>
+        <item>Lundra</item>
+        <item>Mahasamund</item>
+        <item>Manendragarh</item>
+        <item>Marwahi</item>
+        <item>Masturi</item>
+        <item>Mohla Manpur</item>
+        <item>Mungeli</item>
+        <item>Narayanpur</item>
+        <item>Nawagarh</item>
+        <item>Palitanakhar</item>
+        <item>Pamgarh</item>
+        <item>Pandariya</item>
+        <item>Patan</item>
+        <item>Pathalgaon</item>
+        <item>Pratapur</item>
+        <item>Premnagar</item>
+        <item>Raigarh</item>
+        <item>Raipur Gramin</item>
+        <item>Raipur Nagar West</item>
+        <item>Rajim</item>
+        <item>Rajnandgaon</item>
+        <item>Ramanujganj</item>
+        <item>Rampur</item>
+        <item>Saja</item>
+        <item>Sakti</item>
+        <item>Samari</item>
+        <item>Saraipali</item>
+        <item>Sarangarh</item>
+        <item>Sihawa</item>
+        <item>Sitapur</item>
+        <item>Takhatpur</item>
+        <item>Vaishali Nagar</item>
+    </string-array>
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gatePassInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/gate_pass_info"
+        android:gravity="center"
+        android:textSize="@dimen/txt_20sdp"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_20sdp"
+        android:textColor="@color/black"
+       />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:id="@+id/headerLine"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/card_corner_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gatePassInfo"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLine"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/card_corner_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_20sdp"
+            android:background="@drawable/card_bg">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/passDateLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/passDate"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/pass_date"
+                android:textSize="@dimen/txt_18sdp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/passDate"
+                app:layout_constraintStart_toEndOf="@id/passDateLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/passDateLabel"
+                android:text="____________"
+                android:textSize="@dimen/txt_18sdp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorNameLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/visitorName"
+                app:layout_constraintTop_toBottomOf="@id/passDate"
+                android:text="@string/visitor_s_name"
+                android:textSize="@dimen/txt_18sdp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorName"
+                app:layout_constraintStart_toEndOf="@id/visitorNameLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/visitorNameLabel"
+                android:text="____________"
+
+                android:textSize="@dimen/txt_18sdp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorMobileLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/visitorMobile"
+                app:layout_constraintTop_toBottomOf="@id/visitorName"
+                android:text="@string/visitor_s_mobile_no"
+                android:textSize="@dimen/txt_18sdp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorMobile"
+                app:layout_constraintStart_toEndOf="@id/visitorMobileLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/visitorMobileLabel"
+                android:text="____________"
+                android:textSize="@dimen/txt_18sdp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorMobileBarrier"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="visitorMobileLabel, visitorMobile"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorWithNoLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/visitorWithNo"
+                app:layout_constraintTop_toBottomOf="@id/visitorMobileLabel"
+                android:text="@string/no_of_persons_with"
+                android:textSize="@dimen/txt_18sdp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_20sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitorWithNo"
+                app:layout_constraintStart_toEndOf="@id/visitorWithNoLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/visitorWithNoLabel"
+                android:text="____________"
+                android:textSize="@dimen/txt_18sdp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/qrCodeInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:textColor="@color/colorAccent"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:id="@+id/scanQRBtn"
+        android:textColor="@color/white"
+        android:text="@string/scan_qr"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/txt_18sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/card_corner_radius"
+        android:background="@drawable/rounded_solid_red_bg"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
